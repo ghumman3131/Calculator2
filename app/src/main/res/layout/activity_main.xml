@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter first number"
+        android:id="@+id/firstNumberEt"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter second number"
+        android:layout_below="@+id/firstNumberEt"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:id="@+id/secondNumberEt"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_centerVertical="true"
+        android:id="@+id/add_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MINUS"
+        android:layout_toRightOf="@+id/add_btn"
+        android:layout_centerVertical="true"
+        android:id="@+id/minus_btn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MULTIPLY"
+        android:layout_toRightOf="@+id/minus_btn"
+        android:layout_centerVertical="true"
+        android:id="@+id/multiply_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIVIDE"
+        android:layout_toRightOf="@+id/multiply_btn"
+        android:layout_centerVertical="true"
+        android:id="@+id/divide_btn"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="25dp"
+        android:id="@+id/resultText"
+        android:layout_below="@+id/add_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>
